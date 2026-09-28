@@ -1,0 +1,11 @@
+test_acceptance_criteria (test_capstone.BluePeakTests.test_acceptance_criteria) ... ok
+test_all_valid_alerts_normalize (test_capstone.BluePeakTests.test_all_valid_alerts_normalize) ... ok
+test_expected_attack_mappings (test_capstone.BluePeakTests.test_expected_attack_mappings) ... ok
+test_expected_priorities (test_capstone.BluePeakTests.test_expected_priorities) ... ok
+test_human_review_always_required (test_capstone.BluePeakTests.test_human_review_always_required) ... ok
+test_missing_required_field_rejected (test_capstone.BluePeakTests.test_missing_required_field_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

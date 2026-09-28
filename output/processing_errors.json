@@ -1,0 +1,15 @@
+{
+  "valid_input_errors": [],
+  "negative_test_rejections": [
+    {
+      "id": "BP-INVALID-001",
+      "status": "rejected",
+      "error": "Missing required fields: asset"
+    },
+    {
+      "id": "BP-INVALID-002",
+      "status": "rejected",
+      "error": "Unsupported severity: urgent"
+    }
+  ]
+}

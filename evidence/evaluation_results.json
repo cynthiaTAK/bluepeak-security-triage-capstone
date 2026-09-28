@@ -1,0 +1,111 @@
+{
+  "kpis": {
+    "valid_alert_processing_pct": 100.0,
+    "normalization_required_fields_pct": 100.0,
+    "priority_accuracy_pct": 93.3,
+    "attack_mapping_accuracy_pct": 100.0,
+    "human_review_enforcement_pct": 100.0,
+    "logging_results_capture_pct": 100.0
+  },
+  "acceptance": {
+    "valid_alert_processing": true,
+    "normalization_accuracy": true,
+    "priority_accuracy": true,
+    "attack_mapping_accuracy": true,
+    "human_review_enforcement": true,
+    "logging_results_capture": true
+  },
+  "all_acceptance_criteria_met": true,
+  "test_details": [
+    {
+      "id": "BP-SIEM-001",
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    },
+    {
+      "id": "BP-SIEM-002",
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    },
+    {
+      "id": "BP-SIEM-003",
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    },
+    {
+      "id": "BP-SIEM-004",
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    },
+    {
+      "id": "BP-SIEM-005",
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    },
+    {
+      "id": "BP-VULN-001",
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    },
+    {
+      "id": "BP-VULN-002",
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    },
+    {
+      "id": "BP-VULN-003",
+      "priority_match": false,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    },
+    {
+      "id": "BP-VULN-004",
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    },
+    {
+      "id": "BP-VULN-005",
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    },
+    {
+      "id": "BP-ID-001",
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    },
+    {
+      "id": "BP-ID-002",
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    },
+    {
+      "id": "BP-ID-003",
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    },
+    {
+      "id": "BP-ID-004",
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    },
+    {
+      "id": "BP-ID-005",
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true
+    }
+  ]
+}

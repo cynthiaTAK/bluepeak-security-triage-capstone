@@ -1,0 +1,17 @@
+[
+  {
+    "id": "BP-INVALID-001",
+    "source": "siem",
+    "event_type": "network_anomaly",
+    "severity": "medium",
+    "description": "Required asset field intentionally omitted for negative testing"
+  },
+  {
+    "id": "BP-INVALID-002",
+    "source": "identity",
+    "event_type": "unusual_login",
+    "asset": "BP-IDP-01",
+    "severity": "urgent",
+    "description": "Unsupported severity intentionally supplied for negative testing"
+  }
+]

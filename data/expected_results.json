@@ -1,0 +1,69 @@
+[
+  {
+    "id": "BP-SIEM-001",
+    "expected_priority": "high",
+    "expected_attack_id": "T1110.001"
+  },
+  {
+    "id": "BP-SIEM-002",
+    "expected_priority": "high",
+    "expected_attack_id": "T1204.002"
+  },
+  {
+    "id": "BP-SIEM-003",
+    "expected_priority": "medium",
+    "expected_attack_id": "T1059.001"
+  },
+  {
+    "id": "BP-SIEM-004",
+    "expected_priority": "low"
+  },
+  {
+    "id": "BP-SIEM-005",
+    "expected_priority": "critical",
+    "expected_attack_id": "T1078"
+  },
+  {
+    "id": "BP-VULN-001",
+    "expected_priority": "critical"
+  },
+  {
+    "id": "BP-VULN-002",
+    "expected_priority": "high"
+  },
+  {
+    "id": "BP-VULN-003",
+    "expected_priority": "high"
+  },
+  {
+    "id": "BP-VULN-004",
+    "expected_priority": "low"
+  },
+  {
+    "id": "BP-VULN-005",
+    "expected_priority": "critical"
+  },
+  {
+    "id": "BP-ID-001",
+    "expected_priority": "critical",
+    "expected_attack_id": "T1110.001"
+  },
+  {
+    "id": "BP-ID-002",
+    "expected_priority": "high",
+    "expected_attack_id": "T1078"
+  },
+  {
+    "id": "BP-ID-003",
+    "expected_priority": "medium"
+  },
+  {
+    "id": "BP-ID-004",
+    "expected_priority": "critical",
+    "expected_attack_id": "T1068"
+  },
+  {
+    "id": "BP-ID-005",
+    "expected_priority": "low"
+  }
+]

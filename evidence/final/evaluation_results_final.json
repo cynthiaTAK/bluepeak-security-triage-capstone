@@ -1,0 +1,156 @@
+{
+  "kpis": {
+    "valid_alert_processing_pct": 100.0,
+    "normalization_required_fields_pct": 100.0,
+    "priority_accuracy_pct": 100.0,
+    "attack_mapping_accuracy_pct": 100.0,
+    "human_review_enforcement_pct": 100.0,
+    "logging_results_capture_pct": 100.0
+  },
+  "acceptance": {
+    "valid_alert_processing": true,
+    "normalization_accuracy": true,
+    "priority_accuracy": true,
+    "attack_mapping_accuracy": true,
+    "human_review_enforcement": true,
+    "logging_results_capture": true
+  },
+  "all_acceptance_criteria_met": true,
+  "test_details": [
+    {
+      "id": "BP-SIEM-001",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    },
+    {
+      "id": "BP-SIEM-002",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    },
+    {
+      "id": "BP-SIEM-003",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    },
+    {
+      "id": "BP-SIEM-004",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    },
+    {
+      "id": "BP-SIEM-005",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    },
+    {
+      "id": "BP-VULN-001",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    },
+    {
+      "id": "BP-VULN-002",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    },
+    {
+      "id": "BP-VULN-003",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    },
+    {
+      "id": "BP-VULN-004",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    },
+    {
+      "id": "BP-VULN-005",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    },
+    {
+      "id": "BP-ID-001",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    },
+    {
+      "id": "BP-ID-002",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    },
+    {
+      "id": "BP-ID-003",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    },
+    {
+      "id": "BP-ID-004",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    },
+    {
+      "id": "BP-ID-005",
+      "processed": true,
+      "normalization_required_fields": true,
+      "priority_match": true,
+      "attack_mapping_match": true,
+      "human_review_enforced": true,
+      "result_captured": true
+    }
+  ]
+}

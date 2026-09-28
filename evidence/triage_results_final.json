@@ -1,0 +1,383 @@
+[
+  {
+    "id": "BP-SIEM-001",
+    "source": "siem",
+    "asset": "BP-AD-01",
+    "normalized_alert": {
+      "id": "BP-SIEM-001",
+      "source": "siem",
+      "event_type": "failed_logins_then_success",
+      "asset": "BP-AD-01",
+      "severity": "high",
+      "description": "Repeated failed logins followed by successful authentication",
+      "asset_criticality": "high",
+      "internet_exposed": false,
+      "known_exploited": false,
+      "privileged_account": true
+    },
+    "risk_score": 80,
+    "priority": "high",
+    "attack_mapping": {
+      "technique_id": "T1110",
+      "technique": "Brute Force"
+    },
+    "recommendation": "Investigate correlated security telemetry, validate the event, contain confirmed malicious activity, and document analyst findings.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "BP-SIEM-002",
+    "source": "siem",
+    "asset": "BP-WS-104",
+    "normalized_alert": {
+      "id": "BP-SIEM-002",
+      "source": "siem",
+      "event_type": "malware_detection",
+      "asset": "BP-WS-104",
+      "severity": "high",
+      "description": "Endpoint telemetry indicates malware execution",
+      "asset_criticality": "medium",
+      "internet_exposed": false,
+      "known_exploited": false,
+      "privileged_account": false
+    },
+    "risk_score": 65,
+    "priority": "high",
+    "attack_mapping": {
+      "technique_id": "T1204",
+      "technique": "User Execution"
+    },
+    "recommendation": "Investigate correlated security telemetry, validate the event, contain confirmed malicious activity, and document analyst findings.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "BP-SIEM-003",
+    "source": "siem",
+    "asset": "BP-SRV-APP-02",
+    "normalized_alert": {
+      "id": "BP-SIEM-003",
+      "source": "siem",
+      "event_type": "suspicious_powershell",
+      "asset": "BP-SRV-APP-02",
+      "severity": "medium",
+      "description": "Encoded PowerShell execution observed",
+      "asset_criticality": "high",
+      "internet_exposed": false,
+      "known_exploited": false,
+      "privileged_account": false
+    },
+    "risk_score": 50,
+    "priority": "medium",
+    "attack_mapping": {
+      "technique_id": "T1059.001",
+      "technique": "PowerShell"
+    },
+    "recommendation": "Investigate correlated security telemetry, validate the event, contain confirmed malicious activity, and document analyst findings.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "BP-SIEM-004",
+    "source": "siem",
+    "asset": "BP-WS-208",
+    "normalized_alert": {
+      "id": "BP-SIEM-004",
+      "source": "siem",
+      "event_type": "network_anomaly",
+      "asset": "BP-WS-208",
+      "severity": "low",
+      "description": "Unusual outbound connection volume",
+      "asset_criticality": "low",
+      "internet_exposed": false,
+      "known_exploited": false,
+      "privileged_account": false
+    },
+    "risk_score": 20,
+    "priority": "low",
+    "attack_mapping": null,
+    "recommendation": "Investigate correlated security telemetry, validate the event, contain confirmed malicious activity, and document analyst findings.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "BP-SIEM-005",
+    "source": "siem",
+    "asset": "BP-AWS-APP-01",
+    "normalized_alert": {
+      "id": "BP-SIEM-005",
+      "source": "siem",
+      "event_type": "credential_misuse",
+      "asset": "BP-AWS-APP-01",
+      "severity": "high",
+      "description": "Valid credentials used from unusual context",
+      "asset_criticality": "high",
+      "internet_exposed": true,
+      "known_exploited": false,
+      "privileged_account": false
+    },
+    "risk_score": 85,
+    "priority": "critical",
+    "attack_mapping": {
+      "technique_id": "T1078",
+      "technique": "Valid Accounts"
+    },
+    "recommendation": "Escalate for immediate analyst review. Investigate correlated security telemetry, validate the event, contain confirmed malicious activity, and document analyst findings.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "BP-VULN-001",
+    "source": "vulnerability",
+    "asset": "BP-AWS-WEB-01",
+    "normalized_alert": {
+      "id": "BP-VULN-001",
+      "source": "vulnerability",
+      "event_type": "critical_vulnerability",
+      "asset": "BP-AWS-WEB-01",
+      "severity": "critical",
+      "description": "Critical vulnerability on internet-facing web workload",
+      "asset_criticality": "high",
+      "internet_exposed": true,
+      "known_exploited": true,
+      "privileged_account": false
+    },
+    "risk_score": 100,
+    "priority": "critical",
+    "attack_mapping": null,
+    "recommendation": "Escalate for immediate analyst review. Validate the finding, confirm affected asset exposure, prioritize patching or mitigation, and rescan after remediation.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "BP-VULN-002",
+    "source": "vulnerability",
+    "asset": "BP-SRV-DB-01",
+    "normalized_alert": {
+      "id": "BP-VULN-002",
+      "source": "vulnerability",
+      "event_type": "missing_patch",
+      "asset": "BP-SRV-DB-01",
+      "severity": "high",
+      "description": "High-severity missing security patch",
+      "asset_criticality": "critical",
+      "internet_exposed": false,
+      "known_exploited": false,
+      "privileged_account": false
+    },
+    "risk_score": 75,
+    "priority": "high",
+    "attack_mapping": null,
+    "recommendation": "Validate the finding, confirm affected asset exposure, prioritize patching or mitigation, and rescan after remediation.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "BP-VULN-003",
+    "source": "vulnerability",
+    "asset": "BP-AWS-S3-02",
+    "normalized_alert": {
+      "id": "BP-VULN-003",
+      "source": "vulnerability",
+      "event_type": "misconfiguration",
+      "asset": "BP-AWS-S3-02",
+      "severity": "medium",
+      "description": "Storage configuration requires security review",
+      "asset_criticality": "high",
+      "internet_exposed": true,
+      "known_exploited": false,
+      "privileged_account": false
+    },
+    "risk_score": 65,
+    "priority": "high",
+    "attack_mapping": null,
+    "recommendation": "Validate the finding, confirm affected asset exposure, prioritize patching or mitigation, and rescan after remediation.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "BP-VULN-004",
+    "source": "vulnerability",
+    "asset": "BP-WS-115",
+    "normalized_alert": {
+      "id": "BP-VULN-004",
+      "source": "vulnerability",
+      "event_type": "outdated_package",
+      "asset": "BP-WS-115",
+      "severity": "low",
+      "description": "Low-severity outdated package",
+      "asset_criticality": "low",
+      "internet_exposed": false,
+      "known_exploited": false,
+      "privileged_account": false
+    },
+    "risk_score": 20,
+    "priority": "low",
+    "attack_mapping": null,
+    "recommendation": "Validate the finding, confirm affected asset exposure, prioritize patching or mitigation, and rescan after remediation.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "BP-VULN-005",
+    "source": "vulnerability",
+    "asset": "BP-SRV-APP-01",
+    "normalized_alert": {
+      "id": "BP-VULN-005",
+      "source": "vulnerability",
+      "event_type": "known_exploited_vulnerability",
+      "asset": "BP-SRV-APP-01",
+      "severity": "high",
+      "description": "Known-exploited vulnerability affects application server",
+      "asset_criticality": "high",
+      "internet_exposed": false,
+      "known_exploited": true,
+      "privileged_account": false
+    },
+    "risk_score": 85,
+    "priority": "critical",
+    "attack_mapping": null,
+    "recommendation": "Escalate for immediate analyst review. Validate the finding, confirm affected asset exposure, prioritize patching or mitigation, and rescan after remediation.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "BP-ID-001",
+    "source": "identity",
+    "asset": "BP-AD-01",
+    "normalized_alert": {
+      "id": "BP-ID-001",
+      "source": "identity",
+      "event_type": "failed_logins_then_success",
+      "asset": "BP-AD-01",
+      "severity": "high",
+      "description": "Privileged account experienced failed logins followed by success",
+      "asset_criticality": "critical",
+      "internet_exposed": false,
+      "known_exploited": false,
+      "privileged_account": true
+    },
+    "risk_score": 85,
+    "priority": "critical",
+    "attack_mapping": {
+      "technique_id": "T1110",
+      "technique": "Brute Force"
+    },
+    "recommendation": "Escalate for immediate analyst review. Validate the authentication context, review account activity and privilege, contain if compromise is confirmed, and document analyst findings.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "BP-ID-002",
+    "source": "identity",
+    "asset": "BP-IDP-01",
+    "normalized_alert": {
+      "id": "BP-ID-002",
+      "source": "identity",
+      "event_type": "credential_misuse",
+      "asset": "BP-IDP-01",
+      "severity": "high",
+      "description": "Unusual privileged account authentication context",
+      "asset_criticality": "high",
+      "internet_exposed": false,
+      "known_exploited": false,
+      "privileged_account": true
+    },
+    "risk_score": 80,
+    "priority": "high",
+    "attack_mapping": {
+      "technique_id": "T1078",
+      "technique": "Valid Accounts"
+    },
+    "recommendation": "Validate the authentication context, review account activity and privilege, contain if compromise is confirmed, and document analyst findings.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "BP-ID-003",
+    "source": "identity",
+    "asset": "BP-AD-01",
+    "normalized_alert": {
+      "id": "BP-ID-003",
+      "source": "identity",
+      "event_type": "account_lockout",
+      "asset": "BP-AD-01",
+      "severity": "medium",
+      "description": "Repeated authentication failures caused account lockout",
+      "asset_criticality": "medium",
+      "internet_exposed": false,
+      "known_exploited": false,
+      "privileged_account": false
+    },
+    "risk_score": 45,
+    "priority": "medium",
+    "attack_mapping": null,
+    "recommendation": "Validate the authentication context, review account activity and privilege, contain if compromise is confirmed, and document analyst findings.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "BP-ID-004",
+    "source": "identity",
+    "asset": "BP-AD-01",
+    "normalized_alert": {
+      "id": "BP-ID-004",
+      "source": "identity",
+      "event_type": "privilege_escalation",
+      "asset": "BP-AD-01",
+      "severity": "critical",
+      "description": "Unexpected privilege elevation detected",
+      "asset_criticality": "critical",
+      "internet_exposed": false,
+      "known_exploited": false,
+      "privileged_account": true
+    },
+    "risk_score": 100,
+    "priority": "critical",
+    "attack_mapping": {
+      "technique_id": "T1068",
+      "technique": "Exploitation for Privilege Escalation"
+    },
+    "recommendation": "Escalate for immediate analyst review. Validate the authentication context, review account activity and privilege, contain if compromise is confirmed, and document analyst findings.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  },
+  {
+    "id": "BP-ID-005",
+    "source": "identity",
+    "asset": "BP-IDP-01",
+    "normalized_alert": {
+      "id": "BP-ID-005",
+      "source": "identity",
+      "event_type": "unusual_login",
+      "asset": "BP-IDP-01",
+      "severity": "low",
+      "description": "Unusual but low-confidence login context",
+      "asset_criticality": "medium",
+      "internet_exposed": false,
+      "known_exploited": false,
+      "privileged_account": false
+    },
+    "risk_score": 25,
+    "priority": "low",
+    "attack_mapping": null,
+    "recommendation": "Validate the authentication context, review account activity and privilege, contain if compromise is confirmed, and document analyst findings.",
+    "human_review_required": true,
+    "automatic_remediation": false,
+    "review_status": "pending"
+  }
+]

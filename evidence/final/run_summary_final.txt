@@ -1,0 +1,9 @@
+Processed 15 of 15 valid simulated alerts
+Rejected 2 of 2 intentionally invalid test alerts
+valid_alert_processing_pct: 100.0
+normalization_required_fields_pct: 100.0
+priority_accuracy_pct: 100.0
+attack_mapping_accuracy_pct: 100.0
+human_review_enforcement_pct: 100.0
+logging_results_capture_pct: 100.0
+All acceptance criteria met: True

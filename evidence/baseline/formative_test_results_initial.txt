@@ -1,0 +1,23 @@
+test_acceptance_criteria (test_capstone.BluePeakTests.test_acceptance_criteria) ... ok
+test_all_valid_alerts_normalize (test_capstone.BluePeakTests.test_all_valid_alerts_normalize) ... ok
+test_expected_attack_mappings (test_capstone.BluePeakTests.test_expected_attack_mappings) ... ok
+test_expected_priorities (test_capstone.BluePeakTests.test_expected_priorities) ... FAIL
+test_human_review_always_required (test_capstone.BluePeakTests.test_human_review_always_required) ... ok
+test_missing_required_field_rejected (test_capstone.BluePeakTests.test_missing_required_field_rejected) ... ok
+
+======================================================================
+FAIL: test_expected_priorities (test_capstone.BluePeakTests.test_expected_priorities)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/bluepeak-security-triage-capstone/tests/test_capstone.py", line 21, in test_expected_priorities
+    self.assertEqual(results[exp["id"]]["priority"], exp["expected_priority"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'medium' != 'high'
+- medium
++ high
+
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=1)
